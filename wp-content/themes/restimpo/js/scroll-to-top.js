@@ -20,6 +20,7 @@ jQuery( function () {
 		return false;
 	} );
         
+        /* Auslagern */
         jQuery('.site-title a').hover( function(){
             jQuery('.site-title a').css({
                 'color' : '#000000',
@@ -62,6 +63,16 @@ jQuery( function () {
                 'background-image' : 'url(wp-content/themes/restimpo/images/logo.png)',
                 'transition'       : '0s'
             });
+        });
+        
+        jQuery('.sw-text-block-right').each(function(){
+            var hbefore = jQuery(this).prev('.sw-text-block-left').height();
+            var height  = jQuery(this).height();
+            if ( hbefore > height ){
+                jQuery(this).css({
+                    'height' : hbefore
+                });
+            }
         });
 
 } );

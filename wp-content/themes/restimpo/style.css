@@ -254,7 +254,7 @@ body {
 .container,
 #footer {  
   margin: 0 auto;
-  max-width: 980px;
+  max-width: 780px;
   /* position: relative; */
   width: 100%; 
   height: 100%;
@@ -265,7 +265,7 @@ body {
 #main-content {
   float: left;
   margin: 40px 0 20px;
-  width: 760px;         
+  width: 790px;         
 }
 .page-template-template-full-width-php .container #main-content,
 .page-template-template-landing-page-php .container #main-content,
@@ -326,10 +326,11 @@ body {
 .content-headline {
   height: 123px;
   margin: 0 auto;
-  max-width: 980px;
+  max-width: 865px;
   position: relative;
   width: 100%;                
   /* opacity: 0.3; */
+  /* padding-left: 46px; */
 }
 .top-navigation-wrapper {
   background: white;
@@ -342,7 +343,7 @@ body {
 }
 .title-box {
   float: left;
-  width: 50%;           
+  /* width: 50%; */           
 }
 .page-template-template-landing-page-php .title-box {
   width: 100% !important;                                                    
@@ -378,13 +379,13 @@ body {
 }
 .header-logo {
   float: left;
-  height: 101px;
-  margin: 10px 0;
+  height: 105px;
+  margin: 9px 0;
   position: relative;
   width: auto;             
   background-image: url(images/logo.png);
-  width: 150px;
-  right: 18px;
+  width: 180px;
+  right: 0px;
   z-index: 8;
   background-repeat: no-repeat;
 }
@@ -478,14 +479,15 @@ body {
 .header-description-2 h1,
 .content-headline h1{
   color: #E81419 !important;
-  font-size: 32px;
+  font-size: 28px;
   margin: 0;
-  padding: 50px 0;                      
+  padding: 50px 0px;                      
   font-family: STARWARS;
   text-transform: uppercase;
   text-shadow: 1px 2px 1px #000000;
   letter-spacing: 1px;
   opacity: 0.3;
+  text-align: center;
 }
 .header-description-2 h1{
   text-align:center;
@@ -779,9 +781,10 @@ way to fit your requirements. */
 #main-content ol,
 #main-content table,
 #main-content address {
-  /* margin-bottom: 0px; */           
+  /* margin: 0px; */           
   color: #9B9B9B;
   float: none;
+  min-height: 20px;
 }
 #main-content ul ul,
 #main-content ol ol,
@@ -938,7 +941,8 @@ iframe[id^="oauth2relay"] {
 }
 
 /* default post entry */
-.entry-headline {
+.entry-headline,
+.content-endline{
   background: left 50% repeat-x url(images/entry-headline.png);
   color: #9B9B9B;
   font-size: 27px;
@@ -954,10 +958,16 @@ iframe[id^="oauth2relay"] {
 .entry-headline-text {
   background: #9B9B9B;
   display: inline-block;  
-  max-width: 90%;
-  padding-right: 15px;                     
+  /* max-width: 36%; */
+  padding: 0px 20px;                     
   font-family: STARWARS;
   letter-spacing: 1px;
+  text-align: center;
+  margin: auto;
+  display: table;
+}
+.content-endline{
+    height:20px;
 }
 .post-entry {
   border-bottom: 1px solid #ebebeb;
@@ -1603,13 +1613,13 @@ body.custom-background{
 }
 
 .sw-text-block-left{
-    width: 350px;
+    width: 385px;
     text-rendering: optimizeLegibility;
     float: left;  
     /* text-align: start; */
 }
 .sw-text-block-right{
-    margin-left: 370px;
+    margin-left: 405px;
     text-rendering: optimizeLegibility;
 }
 
