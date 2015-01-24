@@ -16,11 +16,13 @@ get_header(); ?>
   <div class="container">
   <div id="main-content">
     <article id="content">
-      <div class="post-thumbnail"><?php restimpo_get_display_image_page(); ?></div> 
       <div class="entry-content">
         <?php 
             $post = get_post('36');
             setup_postdata($post);
+         ?>
+           <h2 class="entry-headline"><span class="entry-headline-text"><?php echo get_the_title('36'); ?></span></h2>
+         <?php
             the_content();
         ?>
 <?php //wp_link_pages( array( 'before' => '<p class="page-link"><span>' . __( 'Pages:', 'restimpo' ) . '</span>', 'after' => '</p>' ) ); ?>
@@ -46,11 +48,13 @@ get_header(); ?>
   <div class="container">
   <div id="main-content">
     <article id="content">
-      <div class="post-thumbnail"><?php restimpo_get_display_image_page(); ?></div> 
       <div class="entry-content">
         <?php 
             $post = get_post('39');
             setup_postdata($post);
+         ?>
+           <h2 class="entry-headline"><span class="entry-headline-text"><?php echo get_the_title('39'); ?></span></h2>
+         <?php
             the_content();
         ?>
       </div>
@@ -74,11 +78,13 @@ get_header(); ?>
   <div class="container">
   <div id="main-content">
     <article id="content">
-      <div class="post-thumbnail"><?php restimpo_get_display_image_page(); ?></div> 
       <div class="entry-content">
         <?php 
-            $post = get_post('36');
+            $post = get_post('72');
             setup_postdata($post);
+         ?>
+           <h2 class="entry-headline"><span class="entry-headline-text"><?php echo get_the_title('72'); ?></span></h2>
+         <?php
             the_content();
         ?>
       </div>
@@ -89,6 +95,14 @@ get_header(); ?>
   <div class="header-description-wrapper">
     <div class="header-description">
       <h1>Durch den Sieg zerbersten meine Ketten</h1>
+    </div>
+  </div>
+  <div class="header-image">
+    <img class="header-img" src="http://localhost/bdk/wp-content/uploads/2015/01/background6.jpg" alt="Die Waechter Ziosts">
+  </div>
+    <div class="header-description-wrapper">
+    <div class="header-description">
+      <h1>Die macht wird mich befreien</h1>
     </div>
   </div>
 </div>     <!-- end of wrapper-content -->

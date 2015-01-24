@@ -26,6 +26,9 @@
 </head>
  
 <body <?php body_class(); ?> id="wrapper"> 
+<div id="toolbar">
+    <div id="toolbar-wrapper"><a id="player-link" href="javascript:player.changeState()">Musik an</a></div>
+</div>
 <header id="wrapper-header">
 <?php if ( !is_page_template('template-landing-page.php') ) { ?>
 <?php if ( has_nav_menu( 'top-navigation' ) || $restimpo_options_db['restimpo_header_facebook_link'] != '' || $restimpo_options_db['restimpo_header_twitter_link'] != '' || $restimpo_options_db['restimpo_header_google_link'] != '' || $restimpo_options_db['restimpo_header_rss_link'] != '' ) {  ?>
@@ -50,18 +53,16 @@
     </div>
   </div>
 <?php }} ?>
-  
   <div class="header-content-wrapper">
     <div class="header-content">
-      <div class="header-logo"></div>
+        <div class="header-logo"></div>
       <div class="title-box">
 <?php if ( $restimpo_options_db['restimpo_logo_url'] == '' ) { ?>
-        <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></p>
+        <!-- <p class="site-title"><a href="<?php //echo esc_url( home_url( '/' ) ); ?>"><?php //bloginfo( 'name' ); ?></a></p> -->
 <?php } else { ?>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="header-logo" src="<?php echo esc_url($restimpo_options_db['restimpo_logo_url']); ?>" alt="<?php bloginfo( 'name' ); ?>" /></a>
 <?php } ?>
       </div>
-        <div class="header-logo"></div>
 <?php if ( !is_page_template('template-landing-page.php') ) { ?>
       <div class="menu-box">
 <?php if ( has_nav_menu( 'main-navigation' ) ) { wp_nav_menu( array( 'menu_id'=>'nav', 'theme_location'=>'main-navigation' ) ); } ?>

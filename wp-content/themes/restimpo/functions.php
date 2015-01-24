@@ -77,6 +77,7 @@ function restimpo_scripts_styles() {
     wp_enqueue_script( 'restimpo-selectnav', get_template_directory_uri() . '/js/selectnav.js', array(), '0.1', true );
     wp_enqueue_script( 'restimpo-responzive', get_template_directory_uri() . '/js/responzive.js', array(), '1.0', true );
     wp_enqueue_script( 'restimpo-html5-ie', get_template_directory_uri() . '/js/html5.js', array(), '3.7', false );
+    wp_enqueue_script( 'restimpo-swfobject', get_template_directory_uri() . '/js/swfobject.js', array(), '2.2, true');
     $wp_scripts->add_data( 'restimpo-html5-ie', 'conditional', 'lt IE 9' );
 	// Loads the main stylesheet.
 	  wp_enqueue_style( 'restimpo-style', get_stylesheet_uri() );

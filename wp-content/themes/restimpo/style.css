@@ -17,11 +17,17 @@ Text Domain: restimpo
 }
 
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+.footer-logo-wrapper {
 	border: none;
-  margin: 0;
+  
+	margin: 0;
 	padding: 0;
 	vertical-align: baseline;
+	height: 220px;
+	position: absolute;
+	top: 0px;
+	width: 780px;
+	z-index: 10;
 }
 h1, h2, h3, h4, h5, h6 {
   -ms-word-wrap: break-word;
@@ -264,7 +270,7 @@ body {
 }
 #main-content {
   float: left;
-  margin: 40px 0 20px;
+  /* margin: 40px 0 20px; */
   width: 790px;         
 }
 .page-template-template-full-width-php .container #main-content,
@@ -278,7 +284,7 @@ body {
   width: 250px;         
 }
 #wrapper-footer {
-  background: #3a3b3d;
+  background: #0C131F;
   border-top: 2px solid #65d6bd;
   margin-top: 10px;                
 }
@@ -326,7 +332,7 @@ body {
 .content-headline {
   height: 123px;
   margin: 0 auto;
-  max-width: 865px;
+  max-width: 43%;
   position: relative;
   width: 100%;                
   /* opacity: 0.3; */
@@ -378,20 +384,23 @@ body {
   transition: color 1s;                   
 }
 .header-logo {
+    -webkit-transition: background-image 1s ease-in-out;
+    -moz-transition: background-image 1s ease-in-out;
+    -o-transition: background-image 1s ease-in-out;
+    transition: background-image 1s ease-in-out;
   float: left;
-  height: 105px;
+  height: 123px;
   margin: 9px 0;
   position: relative;
   width: auto;             
-  background-image: url(images/logo.png);
-  width: 180px;
+  background-image: url(images/logo-header.png);
+  width: 865px;
   right: 0px;
   z-index: 8;
   background-repeat: no-repeat;
 }
-.header-logo:hover {
-  background-image: url(images/logo-hover.png);
-  transition: 1s;
+.header-logo:hover{ 
+  background-image: url(images/logo-header-hover.png);
   cursor: pointer;
 }
 .header-image {
@@ -478,15 +487,15 @@ body {
 .header-description h1,
 .header-description-2 h1,
 .content-headline h1{
-  color: #E81419 !important;
+  color: #000000 !important;
   font-size: 28px;
   margin: 0;
   padding: 50px 0px;                      
   font-family: STARWARS;
   text-transform: uppercase;
-  text-shadow: 1px 2px 1px #000000;
+  text-shadow: 1px 1px 15px #DF0000;
   letter-spacing: 1px;
-  opacity: 0.3;
+  opacity: 0.6;
   text-align: center;
 }
 .header-description-2 h1{
@@ -784,7 +793,9 @@ way to fit your requirements. */
   /* margin: 0px; */           
   color: #9B9B9B;
   float: none;
-  min-height: 20px;
+  /* min-height: 0px; */
+  margin: 0px 5px 0px 0px;
+  padding: 5px 0px 0px 0px;
 }
 #main-content ul ul,
 #main-content ol ol,
@@ -948,12 +959,12 @@ iframe[id^="oauth2relay"] {
   font-size: 27px;
   font-weight: normal;
   line-height: 100%;
-  margin: 0 0 10px;
+  margin: 5px 0 5px;
   position: relative;
   z-index: 50;                                  
   text-transform: uppercase;
   /* text-align: right; */
-  /* height: 10px; */
+  height: 25px;
 }
 .entry-headline-text {
   background: #9B9B9B;
@@ -967,7 +978,8 @@ iframe[id^="oauth2relay"] {
   display: table;
 }
 .content-endline{
-    height:20px;
+    height: 25px;
+    margin-bottom: 15px;
 }
 .post-entry {
   border-bottom: 1px solid #ebebeb;
@@ -1111,6 +1123,7 @@ iframe[id^="oauth2relay"] {
 #footer ol li {
   color: #e3e3e3;
   font-size: 13px;          
+  opacity: 0.3;
 }
 #footer .footer-widget-area p,
 #footer .footer-widget-area ul,
@@ -1121,12 +1134,12 @@ iframe[id^="oauth2relay"] {
   color: #acecde;          
 }
 .footer-widget-area {
-  float: left;
+  /* float: left; */
   height: auto;
-  margin-right: 40px;
+  margin: auto;
   padding: 40px 0 10px;
-  position: relative; 
-  width: 300px; 
+  /* position: absolute; */ 
+  width: 768px; 
   z-index: 50;                
 }
 #footer .footer-widget-area-3 {
@@ -1203,6 +1216,9 @@ iframe[id^="oauth2relay"] {
 .sidebar-widget img,
 .footer-widget img {
   padding-top: 3px;                           
+  opacity: 0.5;
+  /* position: absolute; */
+  bottom: 72px;
 }
 .sidebar-widget .wp-caption,
 .footer-widget .wp-caption {
@@ -1617,13 +1633,102 @@ body.custom-background{
     text-rendering: optimizeLegibility;
     float: left;  
     /* text-align: start; */
+    margin-bottom: 10px;
 }
 .sw-text-block-right{
     margin-left: 405px;
     text-rendering: optimizeLegibility;
+    margin-bottom: 10px;
 }
 
 .sw-text-block-left p,
 .sw-text-block-right p{
     text-align: justify;
+}
+
+html{
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: 30px;
+    overflow-x: hidden;
+}
+#toolbar{
+    width:100%;
+    height: 40px;
+    position: fixed;
+    z-index: 8888;
+    top: 0px;
+    left: 0px;
+    background-color: #0C131F !important;
+    box-shadow: 1px 1px 2px 0px #000000;
+}
+#toolbar-wrapper{
+    height:100%;
+    width: 40%;
+    /* margin: auto; */
+    float: right;
+    padding-right: 30px;
+}
+#toolbar-wrapper a{
+    color: #9B9B9B;
+    text-decoration: none;
+    float: right;
+    margin-top: 9px;
+    font-size: 12px;
+    opacity: 0.6;
+}
+#toolbar-wrapper a:hover{
+  opacity: 1;
+  transition: 1s;
+}
+#content{
+    margin:30px 0px;
+}
+#footer .footer-widget-area-1{
+    width: 768px !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: -30px;
+    text-align:center;
+    z-index: 11;
+    position: relative;
+}
+#footer .footer-widget-area-1 a{
+    font-size:20px;
+    font-family: STARWARS;
+    text-decoration: none;
+    /* display: block; */
+    padding: 0px 10px;
+}
+#footer .footer-widget-area-1 a:hover{
+  text-shadow: 1px 1px 15px #DF0000;
+  color: #000000;
+  transition: 0.5s;
+}
+#footer .footer-widget-area-1 p{
+    text-align:center;
+    font-size: 10px;
+}
+#footer .footer-widget-area-2{
+    width: 300px !important;
+    position: relative;
+    right: 0%;
+    padding-top: 0px;
+}
+#footer .footer-logo-left,
+#footer .footer-logo-right{
+    background-image: url(images/logo.png);
+    width: 140px;
+    height: 100px;
+}
+#footer .footer-logo-left{
+    margin-left: -145px;
+    position: absolute;
+    top: 65px;
+}
+#footer .footer-logo-right{
+    float: right;
+    margin-top: 65px;
+    right: 11px;
+    margin-right: -100px;
 }

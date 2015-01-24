@@ -41,7 +41,7 @@ body .sidebar-widget a {
   color: #c57a45;                       
 }
 body #wrapper-footer {
-  border-color: #c57a45;                     
+  border-color: #0C131F;                     
 }
 body .social-icon,
 body .highlight-text,
@@ -53,7 +53,7 @@ body #searchform .send:hover {
 }
 body #footer a,
 body .footer-signature .footer-signature-content a {
-  color: #d9a986;               
+  color: #9B9B9B;               
 }
 body input[type="submit"],
 body input[type="reset"],
