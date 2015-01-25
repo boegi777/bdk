@@ -38,7 +38,7 @@ get_header(); ?>
     </div>
   </div>
   <div class="header-image">
-    <img class="header-img" src="http://localhost/bdk/wp-content/uploads/2015/01/background4_012.jpg" alt="Die Waechter Ziosts">
+    <img class="header-img" src="wp-content/uploads/2015/01/background4_012.jpg" alt="Die Waechter Ziosts">
   </div>
   <div class="header-description-wrapper">
     <div class="header-description">
@@ -68,7 +68,7 @@ get_header(); ?>
     </div>
   </div>
   <div class="header-image">
-    <img class="header-img" src="http://localhost/bdk/wp-content/uploads/2015/01/background3.jpg" alt="Die Waechter Ziosts">
+    <img class="header-img" src="wp-content/uploads/2015/01/background3.jpg" alt="Die Waechter Ziosts">
   </div>
   <div class="header-description-wrapper">
     <div class="header-description">
@@ -98,7 +98,7 @@ get_header(); ?>
     </div>
   </div>
   <div class="header-image">
-    <img class="header-img" src="http://localhost/bdk/wp-content/uploads/2015/01/background6.jpg" alt="Die Waechter Ziosts">
+    <img class="header-img" src="wp-content/uploads/2015/01/background6.jpg" alt="Die Waechter Ziosts">
   </div>
     <div class="header-description-wrapper">
     <div class="header-description">
